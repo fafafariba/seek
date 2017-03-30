@@ -1,6 +1,6 @@
 # Seek
 
-Given a set of letters, the player will try to find as many words as possible in the alotted time.
+Given a set of letters, the player will try to find as many words as possible in the allotted time.
 
 ## Functionality & MVP
 
@@ -28,24 +28,24 @@ Layout inspiration from [Word Unscramble]()
 
 ## Architecture & Technologies
 
-### `word.js` file 
+### `word.js` file
 * Select random 5 letter word
 * Determine combinations
 * Parse through dictionaries to find valid words
 
-### `board.js` file 
-* Instantiates word
-* Validates player words
-* Tracks correctly guessed words
+### `view.js` file
+* Execute animations
+* Render to DOM
+* Capture click and keyboard events
 
 ### `game.js` file
-* Instantiates game/board
-* Run and track timer
-* Render to DOM
+* Instantiate word and timer
+* Keep track of guesses
+* Verify validity of guesses
 
-### `player.js` file
-* Formats player input
-* Delegates to game for validating
+### `timer.js` file
+* Decrement, pause, and resume timer
+* Render updated time
 
 ### `main.css` file
 * Styling
@@ -59,7 +59,7 @@ Layout inspiration from [Word Unscramble]()
 
 ## Technologies
 
-This game will use Vanilla Javascript, Webpack for bundling, and Babel for converint ES6 to ES5 for browswers.
+This game will use Vanilla Javascript, jQuery, Webpack for bundling, and Babel for converting ES6 to ES5 for browsers.
 
 It will also utilize the [Scrabble word game dictionary](https://www.wordgamedictionary.com/word-lists/) as a reference.
 
@@ -69,24 +69,14 @@ It will also utilize the [Scrabble word game dictionary](https://www.wordgamedic
 
 - [ ] Format dictionaries
 - [ ] word.js file
-  * Select random 5 letter word
-  * Determine combinations
-  * Parse through dictionaries to find valid words
-- [ ] player.js file
-  * Formats player input
-  * Delegates to game for validating
-  
+- [ ] game.js file
+
+
 
 ### Day 2
-- [ ] board.js file
-  * Instantiates word
-  * Validates player words
-  * Tracks correctly guessed words  
-- [ ] game.js file 
-  * Instantiates game/board
-  * Run and track timer
-  * Render to DOM
-- [ ] keyboard controls 
+- [ ] view.js file
+- [ ] timer.js file
+- [ ] keyboard controls
 
 ### Day 3
 
@@ -105,5 +95,3 @@ It will also utilize the [Scrabble word game dictionary](https://www.wordgamedic
 * Scoring
 * A 'shuffle' letters button
 * Multi-levels featuring 6 letter and 7 letter words
-
-
