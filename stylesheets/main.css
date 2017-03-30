@@ -1,0 +1,249 @@
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  background:
+    url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+    aquamarine; /* For browsers that do not support gradients */
+  background:
+    url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+    -webkit-linear-gradient(aquamarine, LightGoldenRodYellow ); /* For Safari 5.1 to 6.0 */
+  background:
+      url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+      -o-linear-gradient(aquamarine, LightGoldenRodYellow ); /* For Opera 11.1 to 12.0 */
+  background:
+      url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+      -moz-linear-gradient(aquamarine, LightGoldenRodYellow ); /* For Firefox 3.6 to 15 */
+  background:
+      url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+      linear-gradient(aquamarine, LightGoldenRodYellow ); /* Standard syntax */
+
+  font-family: 'Raleway Dots', cursive;
+  font-weight: bold;
+  color: darkslategray;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 100;
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', cursive;
+  text-transform: uppercase;
+}
+
+.seek {
+  width: 80vw;
+  height: 80vh;
+  min-width: 670px;
+  min-height: 530px;
+  margin: 0 auto;
+  /*border: 1px solid darkslategray;*/
+}
+
+#timer-round {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 30px;
+}
+
+#timer-round.hidden {
+  display: none;
+}
+
+#timer-round div{
+  flex: 3;
+}
+
+#timer, #round {
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#seek-letter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.seek-letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslategray;
+  height: 150px;
+  width: 150px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#instructions-animate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  margin-top: 50px;
+}
+
+#instructions-animate p {
+  font-size: 20px;
+}
+
+#instructions-animate.hidden{
+  display: none;
+  height: 0;
+}
+
+#scrambled-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#scrambled-container.hidden {
+  display: none;
+  height: 0;
+}
+
+.scrambled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkslategray;
+  height: 100px;
+  width: 90px;
+  font-size: 60px;
+  text-transform: uppercase;
+  background-color: darkslategray;
+  text-align: center;
+  color: white;
+}
+
+.scrambled:not(:last-child) {
+  margin-right: 10px;
+}
+
+#guesses-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  margin: 20px 20px 30px 20px;
+}
+
+#guesses-container.hidden {
+  display: none;
+}
+
+#guess1, #guess2, #guess3, #guess4, #guess5, #guess6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkslategray;
+  height: 100px;
+  width: 90px;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.guessed {
+  background-color: darkslategray;
+}
+
+#guess1, #guess2, #guess3, #guess4 {
+  margin-right: 10px;
+}
+
+.shake {
+  animation: shake .5s;
+  -webkit-animation: shake .5s;
+}
+
+@-webkit-keyframes shake {
+   0%, 100% {-webkit-transform: translateX(0);}
+   10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-5px);}
+   20%, 40%, 60%, 80% {-webkit-transform: translateX(5px);}
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}
+  20%, 40%, 60%, 80% {transform: translateX(5px);}
+}
+
+.words-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  position: relative;
+  bottom: 5px;
+}
+
+.words-container div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  flex: 2;
+  height: 30px;
+  margin: 0 15px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  padding-left: 5px;
+}
+
+.rendered-word {
+  position: relative;
+  background-color: darkslategray;
+  color: white;
+  -webkit-transform: rotateX(-360deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  -webkit-transform-origin: 100%;
+  transform: rotateX(-360deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  transform-origin: 100%;
+}
+
+#id {
+  margin: 0 auto;
+}
