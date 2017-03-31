@@ -2,6 +2,7 @@ html {
   position: relative;
   height: 100%;
 }
+
 body {
   background:
     url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
@@ -50,6 +51,9 @@ h1, h2, h3 {
 }
 
 .seek {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80vw;
   height: 80vh;
   min-width: 670px;
@@ -65,32 +69,23 @@ h1, h2, h3 {
   margin-left: 40px;
   margin-right: 40px;
   font-size: 30px;
+  width: 600px;
 }
 
 #timer-round.hidden {
   display: none;
 }
 
-#timer-round div{
-  display: flex;
-  flex: 3;
-}
-
-#timer, #round {
-  display: flex;
-  flex: 1;
-}
-
 .hidden {
   display: none;
 }
-
 
 #seek-letter-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90%;
+  margin-top: 150px;
 }
 
 .seek-letter {
@@ -112,7 +107,7 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   height: 60%;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 #instructions-animate p {
@@ -128,7 +123,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 500px;
+  min-width: 550px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
@@ -151,6 +146,8 @@ h1, h2, h3 {
   background-color: darkslategray;
   text-align: center;
   color: white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .scrambled:not(:last-child) {
@@ -161,8 +158,8 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 500px;
-  margin: 20px 20px 30px 20px;
+  min-width: 550px;
+  margin: 20px 20px 65px 20px;
 }
 
 #guesses-container.hidden {
@@ -180,14 +177,12 @@ h1, h2, h3 {
   text-transform: uppercase;
   text-align: center;
   color: white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .guessed {
   background-color: darkslategray;
-}
-
-#guess1, #guess2, #guess3, #guess4 {
-  margin-right: 10px;
 }
 
 .shake {
@@ -248,4 +243,35 @@ h1, h2, h3 {
 
 #id {
   margin: 0 auto;
+}
+
+#results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 570px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 100px;
+}
+
+#results-container.hidden {
+  display: none;
+  height: 0;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkslategray;
+  height: 100px;
+  width: 90px;
+  font-size: 60px;
+  text-transform: uppercase;
+  background-color: darkslategray;
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
