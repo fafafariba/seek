@@ -53,10 +53,11 @@ h1, h2, h3 {
 header {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgba(47,79,79, 1);
   width: 100%;
   height: 20px;
+  letter-spacing: 2px;
 }
 
 header > div{
@@ -65,6 +66,73 @@ header > div{
   margin-left: 50px;
   margin-right: 50px;
   letter-spacing: 5px;
+}
+
+#fariba a{
+  color: white;
+  text-decoration: none;
+}
+
+.hinge:hover {
+  animation: 5s hinge;
+  -webkit-animation: 5s hinge;
+  color: yellow;
+}
+
+@-webkit-keyframes hinge {
+  0% {
+     -webkit-transform: rotate(0);
+     -webkit-transform-origin: top left;
+     -webkit-animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+     -webkit-transform: rotate(80deg);
+     -webkit-transform-origin: top left;
+     -webkit-animation-timing-function: ease-in-out;
+  }
+  40% {
+     -webkit-transform: rotate(60deg);
+     -webkit-transform-origin: top left;
+     -webkit-animation-timing-function: ease-in-out;
+  }
+  80% {
+     -webkit-transform: rotate(60deg) translateY(0);
+     opacity: 1;
+     -webkit-transform-origin: top left;
+     -webkit-animation-timing-function: ease-in-out;
+  }
+  100% {
+     -webkit-transform: translateY(700px);
+     opacity: 0;
+  }
+}
+
+@keyframes hinge {
+  0% {
+     transform: rotate(0);
+     transform-origin: top left;
+     animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+     transform: rotate(80deg);
+     transform-origin: top left;
+     animation-timing-function: ease-in-out;
+  }
+  40% {
+     transform: rotate(60deg);
+     transform-origin: top left;
+     animation-timing-function: ease-in-out;
+  }
+  80% {
+     transform: rotate(60deg) translateY(0);
+     opacity: 1;
+     transform-origin: top left;
+     animation-timing-function: ease-in-out;
+  }
+  100% {
+     transform: translateY(700px);
+     opacity: 0;
+  }
 }
 
 .seek {
@@ -86,8 +154,9 @@ header > div{
   margin-left: 40px;
   margin-right: 40px;
   font-size: 30px;
-  width: 600px;
-  margin-top: 50px;
+  width: 525px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 #timer-round.hidden {
@@ -103,6 +172,7 @@ header > div{
   justify-content: center;
   align-items: center;
   height: 90%;
+  min-height: 150px;
   margin-top: 150px;
 }
 
@@ -112,9 +182,9 @@ header > div{
   align-items: center;
   background-color: darkslategray;
   height: 150px;
-  width: 150px;
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 110px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -125,7 +195,10 @@ header > div{
   justify-content: center;
   align-items: center;
   height: 60%;
-  margin-top: 100px;
+}
+
+#instructions-animate h2{
+  margin-top: 300px;
 }
 
 #instructions-animate p {
@@ -142,9 +215,9 @@ header > div{
   justify-content: center;
   align-items: center;
   min-width: 550px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
+  min-height: 102px;
+  margin: 20px;
+
 }
 
 #scrambled-container.hidden {
@@ -164,20 +237,21 @@ header > div{
   background-color: darkslategray;
   text-align: center;
   color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.scrambled:not(:last-child) {
+/*.scrambled:not(:last-child) {
   margin-right: 10px;
-}
+}*/
 
 #guesses-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 550px;
-  margin: 20px 20px 65px 20px;
+  min-height: 102px;
+  margin: 0px 20px 50px 20px;
 }
 
 #guesses-container.hidden {
@@ -195,8 +269,8 @@ header > div{
   text-transform: uppercase;
   text-align: center;
   color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .guessed {
@@ -225,11 +299,10 @@ header > div{
   justify-content: center;
   align-items: center;
   min-width: 500px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 5px;
+  min-height: 30px;
   position: relative;
   bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .words-container div{
@@ -237,12 +310,16 @@ header > div{
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  flex: 2;
-  height: 30px;
-  margin: 0 15px;
+  min-height: 30px;
+  min-width: 100px;
   font-size: 20px;
   letter-spacing: 5px;
   padding-left: 5px;
+  margin-left: 5px;
+}
+
+.words-container.hidden {
+  display: none;
 }
 
 .rendered-word {
@@ -269,13 +346,14 @@ header > div{
   align-items: center;
   min-width: 570px;
   margin-left: 20px;
+  height: 100px;
   margin-right: 20px;
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-bottom: 20px;
 }
 
 #results-container.hidden {
   display: none;
-  height: 0;
 }
 
 .results {
@@ -290,10 +368,25 @@ header > div{
   background-color: darkslategray;
   text-align: center;
   color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #continue {
-  font-size: 20px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#pause {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: darkslategray;
+  color: white;
+  font-size: 30px;
+  z-index: 2;
 }
