@@ -1,5 +1,5 @@
 # Seek
-Seek is a simple yet elegant Javascript based word game. Players are given a set of letters and must find as many words as possible in the time alloted.
+Seek is a simple yet elegant Javascript based word game. Players are given a set of letters and must find as many words as possible in the time allotted.
 ![alt tag](https://fafafariba.github.io/seek/assets/seek_demo.mov)
 
 ## User Interface
@@ -42,10 +42,6 @@ combinations(word) {
 ```
 When further filtered by word length and presence in the [Scrabble Dictionary](https://www.wordgamedictionary.com/word-lists/), the result is an array of all valid words that can be formed with the given letters.
 
-### Dependencies
+## The Tech
 
-A couple methods were imported from the Lodash library. 
-Babel Javascript compiler provided a means of converting ES6 to the more browswer compatible ES5.
-
-
-
+Babel Javascript compiler provided a means of converting ES6 to the more browser compatible ES5. The Javascript package manager, Yarn, was used in lieu of npm.
