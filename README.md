@@ -1,5 +1,6 @@
 # Seek
 Seek is a simple yet elegant Javascript based word game. Players are given a set of letters and must find as many words as possible in the time allotted.
+
 ![alt tag](https://fafafariba.github.io/seek/assets/seek_demo.gif)
 
 ## User Interface
