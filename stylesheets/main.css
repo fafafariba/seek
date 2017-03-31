@@ -5,19 +5,19 @@ html {
 
 body {
   background:
-    url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+    url('../assets/transparent-square-tiles.png'),
     aquamarine; /* For browsers that do not support gradients */
   background:
-    url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+    url('../assets/transparent-square-tiles.png'),
     -webkit-linear-gradient(aquamarine, LightGoldenRodYellow ); /* For Safari 5.1 to 6.0 */
   background:
-      url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+      url('../assets/transparent-square-tiles.png'),
       -o-linear-gradient(aquamarine, LightGoldenRodYellow ); /* For Opera 11.1 to 12.0 */
   background:
-      url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+      url('../assets/transparent-square-tiles.png'),
       -moz-linear-gradient(aquamarine, LightGoldenRodYellow ); /* For Firefox 3.6 to 15 */
   background:
-      url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png),
+      url('../assets/transparent-square-tiles.png'),
       linear-gradient(aquamarine, LightGoldenRodYellow ); /* Standard syntax */
 
   font-family: 'Raleway Dots', cursive;
