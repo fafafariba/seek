@@ -1,5 +1,5 @@
 # Seek
-Seek is a simple yet elegant Javascript based word game. Players are given a set of letters and must find as many words as possible in the time allotted.
+[Seek](https://fafafariba.github.io/seek/) is a simple yet elegant Javascript based word game. Players are given a set of letters and must find as many words as possible in the time allotted.
 
 ![alt tag](https://fafafariba.github.io/seek/assets/seek_demo.gif)
 
@@ -46,3 +46,7 @@ When further filtered by word length and presence in the [Scrabble Dictionary](h
 ## The Tech
 
 Babel Javascript compiler provided a means of converting ES6 to the more browser compatible ES5. The Javascript package manager, Yarn, was used in lieu of npm.
+
+## Acknowledgements
+
+Musical accoutrement "Arurarian Dance" by Nujabes. 
