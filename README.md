@@ -14,7 +14,7 @@ The game was built in the span of four days using Javascript, jQuery, CSS, and H
 
 The core of Seek is the algorithm that finds all possible combinations of letters.
 
-````javascript
+```javascript
 combinations(word) {
    if (word.length === 1) {
      return [word];
