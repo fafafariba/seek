@@ -5,7 +5,7 @@
 
 ## User Interface
 
-Seek was designed with the user in mind. The game can be click with just a click and keyboard presses. Muted colors, a clean layout and ample spacing give the game it visual appeal.
+Seek was designed with the user in mind. The game starts with a click and the rest of commands are controlled via keyboard. Muted colors, a clean layout and ample spacing give the game it visual appeal.
 
 ## The Code
 
@@ -13,7 +13,7 @@ The game was built in the span of four days using Javascript, jQuery, CSS, and H
 
 ### Algorithms
 
-The core of Seek is the algorithm that finds all possible combinations of letters.
+The core of Seek is the recursive algorithm that finds all possible combinations of letters.
 
 ```javascript
 combinations(word) {
